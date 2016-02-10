@@ -1,5 +1,5 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="controls_whileUntil" id="1" inline="false" x="-839" y="71">
+  <block type="controls_whileUntil" id="1" inline="false" x="-870" y="-14">
     <field name="MODE">UNTIL</field>
     <value name="NUMBER">
       <block type="sensor_button" id="2">
@@ -55,7 +55,64 @@
                                   <block type="oled_drawtext" id="116">
                                     <field name="TEXT"></field>
                                     <next>
-                                      <block type="multimedia_doupdate" id="169"></block>
+                                      <block type="oled_setcursor" id="170" inline="true">
+                                        <value name="STARTX">
+                                          <block type="math_number" id="171">
+                                            <field name="NUM">10</field>
+                                          </block>
+                                        </value>
+                                        <value name="STARTY">
+                                          <block type="math_number" id="172">
+                                            <field name="NUM">40</field>
+                                          </block>
+                                        </value>
+                                        <next>
+                                          <block type="oled_drawnumber" id="173" inline="true">
+                                            <value name="NUMBER">
+                                              <block type="sensor_object" id="174">
+                                                <field name="OBJECT">LEFTSIDE</field>
+                                              </block>
+                                            </value>
+                                            <next>
+                                              <block type="oled_drawtext" id="175">
+                                                <field name="TEXT"></field>
+                                                <next>
+                                                  <block type="multimedia_doupdate" id="169">
+                                                    <next>
+                                                      <block type="oled_setcursor" id="176" inline="true">
+                                                        <value name="STARTX">
+                                                          <block type="math_number" id="177">
+                                                            <field name="NUM">100</field>
+                                                          </block>
+                                                        </value>
+                                                        <value name="STARTY">
+                                                          <block type="math_number" id="178">
+                                                            <field name="NUM">40</field>
+                                                          </block>
+                                                        </value>
+                                                        <next>
+                                                          <block type="oled_drawnumber" id="179" inline="true">
+                                                            <value name="NUMBER">
+                                                              <block type="sensor_object" id="180">
+                                                                <field name="OBJECT">RIGHTSIDE</field>
+                                                              </block>
+                                                            </value>
+                                                            <next>
+                                                              <block type="oled_drawtext" id="181">
+                                                                <field name="TEXT"></field>
+                                                              </block>
+                                                            </next>
+                                                          </block>
+                                                        </next>
+                                                      </block>
+                                                    </next>
+                                                  </block>
+                                                </next>
+                                              </block>
+                                            </next>
+                                          </block>
+                                        </next>
+                                      </block>
                                     </next>
                                   </block>
                                 </next>
