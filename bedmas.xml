@@ -123,35 +123,12 @@
                                                                         <next>
                                                                           <block type="multimedia_doupdate" id="35">
                                                                             <next>
-                                                                              <block type="movement_setmotors" id="45" inline="true">
-                                                                                <value name="BOTHMOVLEFT">
-                                                                                  <block type="sensor_object" id="46">
+                                                                              <block type="movement_leftmotor" id="165" inline="true">
+                                                                                <value name="MOVLEFT">
+                                                                                  <block type="sensor_object" id="93">
                                                                                     <field name="OBJECT">LEFTFRONT</field>
                                                                                   </block>
                                                                                 </value>
-                                                                                <value name="BOTHMOVRIGHT">
-                                                                                  <block type="sensor_object" id="47">
-                                                                                    <field name="OBJECT">LEFTFRONT</field>
-                                                                                  </block>
-                                                                                </value>
-                                                                                <next>
-                                                                                  <block type="movement_leftmotor" id="165" inline="true">
-                                                                                    <value name="MOVLEFT">
-                                                                                      <block type="sensor_object" id="93">
-                                                                                        <field name="OBJECT">LEFTFRONT</field>
-                                                                                      </block>
-                                                                                    </value>
-                                                                                    <next>
-                                                                                      <block type="movement_rightmotor" id="175" inline="true">
-                                                                                        <value name="MOVRIGHT">
-                                                                                          <block type="sensor_object" id="176">
-                                                                                            <field name="OBJECT">LEFTFRONT</field>
-                                                                                          </block>
-                                                                                        </value>
-                                                                                      </block>
-                                                                                    </next>
-                                                                                  </block>
-                                                                                </next>
                                                                               </block>
                                                                             </next>
                                                                           </block>
