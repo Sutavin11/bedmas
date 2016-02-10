@@ -123,17 +123,41 @@
                                                                         <next>
                                                                           <block type="multimedia_doupdate" id="35">
                                                                             <next>
-                                                                              <block type="movement_setmotors" id="186" inline="true">
-                                                                                <value name="BOTHMOVLEFT">
-                                                                                  <block type="sensor_object" id="187">
-                                                                                    <field name="OBJECT">RIGHTFRONT</field>
+                                                                              <block type="movement_leftmotor" id="301" inline="true">
+                                                                                <value name="MOVLEFT">
+                                                                                  <block type="math_arithmetic" id="230" inline="true">
+                                                                                    <field name="OP">ADD</field>
+                                                                                    <value name="A">
+                                                                                      <block type="sensor_object" id="187">
+                                                                                        <field name="OBJECT">RIGHTFRONT</field>
+                                                                                      </block>
+                                                                                    </value>
+                                                                                    <value name="B">
+                                                                                      <block type="sensor_object" id="188">
+                                                                                        <field name="OBJECT">RIGHTFRONT</field>
+                                                                                      </block>
+                                                                                    </value>
                                                                                   </block>
                                                                                 </value>
-                                                                                <value name="BOTHMOVRIGHT">
-                                                                                  <block type="sensor_object" id="188">
-                                                                                    <field name="OBJECT">LEFTFRONT</field>
+                                                                                <next>
+                                                                                  <block type="movement_rightmotor" id="311" inline="true">
+                                                                                    <value name="MOVRIGHT">
+                                                                                      <block type="math_arithmetic" id="312" inline="true">
+                                                                                        <field name="OP">ADD</field>
+                                                                                        <value name="A">
+                                                                                          <block type="sensor_object" id="313">
+                                                                                            <field name="OBJECT">LEFTFRONT</field>
+                                                                                          </block>
+                                                                                        </value>
+                                                                                        <value name="B">
+                                                                                          <block type="sensor_object" id="314">
+                                                                                            <field name="OBJECT">LEFTFRONT</field>
+                                                                                          </block>
+                                                                                        </value>
+                                                                                      </block>
+                                                                                    </value>
                                                                                   </block>
-                                                                                </value>
+                                                                                </next>
                                                                               </block>
                                                                             </next>
                                                                           </block>
