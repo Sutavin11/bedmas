@@ -1,5 +1,5 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="controls_whileUntil" id="1" inline="false" x="-870" y="-14">
+  <block type="controls_whileUntil" id="1" inline="false" x="-900" y="-67">
     <field name="MODE">UNTIL</field>
     <value name="NUMBER">
       <block type="sensor_button" id="2">
@@ -125,16 +125,26 @@
                                                                             <next>
                                                                               <block type="movement_leftmotor" id="301" inline="true">
                                                                                 <value name="MOVLEFT">
-                                                                                  <block type="math_arithmetic" id="230" inline="true">
-                                                                                    <field name="OP">ADD</field>
+                                                                                  <block type="math_arithmetic" id="358" inline="true">
+                                                                                    <field name="OP">DIVIDE</field>
                                                                                     <value name="A">
-                                                                                      <block type="sensor_object" id="187">
-                                                                                        <field name="OBJECT">RIGHTFRONT</field>
+                                                                                      <block type="math_arithmetic" id="230" inline="true">
+                                                                                        <field name="OP">MULTIPLY</field>
+                                                                                        <value name="A">
+                                                                                          <block type="sensor_object" id="187">
+                                                                                            <field name="OBJECT">RIGHTFRONT</field>
+                                                                                          </block>
+                                                                                        </value>
+                                                                                        <value name="B">
+                                                                                          <block type="sensor_object" id="188">
+                                                                                            <field name="OBJECT">RIGHTFRONT</field>
+                                                                                          </block>
+                                                                                        </value>
                                                                                       </block>
                                                                                     </value>
                                                                                     <value name="B">
-                                                                                      <block type="sensor_object" id="188">
-                                                                                        <field name="OBJECT">RIGHTFRONT</field>
+                                                                                      <block type="math_number" id="365">
+                                                                                        <field name="NUM">100</field>
                                                                                       </block>
                                                                                     </value>
                                                                                   </block>
@@ -142,16 +152,26 @@
                                                                                 <next>
                                                                                   <block type="movement_rightmotor" id="311" inline="true">
                                                                                     <value name="MOVRIGHT">
-                                                                                      <block type="math_arithmetic" id="312" inline="true">
-                                                                                        <field name="OP">ADD</field>
+                                                                                      <block type="math_arithmetic" id="328" inline="true">
+                                                                                        <field name="OP">DIVIDE</field>
                                                                                         <value name="A">
-                                                                                          <block type="sensor_object" id="313">
-                                                                                            <field name="OBJECT">LEFTFRONT</field>
+                                                                                          <block type="math_arithmetic" id="312" inline="true">
+                                                                                            <field name="OP">MULTIPLY</field>
+                                                                                            <value name="A">
+                                                                                              <block type="sensor_object" id="313">
+                                                                                                <field name="OBJECT">LEFTFRONT</field>
+                                                                                              </block>
+                                                                                            </value>
+                                                                                            <value name="B">
+                                                                                              <block type="sensor_object" id="314">
+                                                                                                <field name="OBJECT">LEFTFRONT</field>
+                                                                                              </block>
+                                                                                            </value>
                                                                                           </block>
                                                                                         </value>
                                                                                         <value name="B">
-                                                                                          <block type="sensor_object" id="314">
-                                                                                            <field name="OBJECT">LEFTFRONT</field>
+                                                                                          <block type="math_number" id="366">
+                                                                                            <field name="NUM">100</field>
                                                                                           </block>
                                                                                         </value>
                                                                                       </block>
