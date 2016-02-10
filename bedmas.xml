@@ -77,7 +77,26 @@
                                               <block type="oled_drawtext" id="83">
                                                 <field name="TEXT"></field>
                                                 <next>
-                                                  <block type="multimedia_doupdate" id="35"></block>
+                                                  <block type="multimedia_doupdate" id="35">
+                                                    <next>
+                                                      <block type="movement_leftmotor" id="93" inline="true">
+                                                        <value name="MOVLEFT">
+                                                          <block type="sensor_light" id="113">
+                                                            <field name="LIGHT">RIGHT</field>
+                                                          </block>
+                                                        </value>
+                                                        <next>
+                                                          <block type="movement_rightmotor" id="112" inline="true">
+                                                            <value name="MOVRIGHT">
+                                                              <block type="sensor_light" id="95">
+                                                                <field name="LIGHT">LEFT</field>
+                                                              </block>
+                                                            </value>
+                                                          </block>
+                                                        </next>
+                                                      </block>
+                                                    </next>
+                                                  </block>
                                                 </next>
                                               </block>
                                             </next>
