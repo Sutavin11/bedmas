@@ -134,6 +134,15 @@
                                                                                     <field name="OBJECT">LEFTFRONT</field>
                                                                                   </block>
                                                                                 </value>
+                                                                                <next>
+                                                                                  <block type="movement_leftmotor" id="165" inline="true">
+                                                                                    <value name="MOVLEFT">
+                                                                                      <block type="sensor_object" id="93">
+                                                                                        <field name="OBJECT">LEFTFRONT</field>
+                                                                                      </block>
+                                                                                    </value>
+                                                                                  </block>
+                                                                                </next>
                                                                               </block>
                                                                             </next>
                                                                           </block>
