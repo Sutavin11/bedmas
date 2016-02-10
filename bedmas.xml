@@ -1,9 +1,9 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="controls_whileUntil" id="213" inline="false" x="233" y="59">
+  <block type="controls_whileUntil" id="213" inline="false" x="-839" y="71">
     <field name="MODE">UNTIL</field>
     <value name="NUMBER">
       <block type="sensor_button" id="220">
-        <field name="OBJECT">ENTER</field>
+        <field name="OBJECT">UP</field>
       </block>
     </value>
     <statement name="DO">
