@@ -123,12 +123,35 @@
                                                                         <next>
                                                                           <block type="multimedia_doupdate" id="35">
                                                                             <next>
-                                                                              <block type="movement_leftmotor" id="165" inline="true">
-                                                                                <value name="MOVLEFT">
-                                                                                  <block type="sensor_object" id="93">
+                                                                              <block type="movement_setmotors" id="186" inline="true">
+                                                                                <value name="BOTHMOVLEFT">
+                                                                                  <block type="sensor_object" id="187">
                                                                                     <field name="OBJECT">LEFTFRONT</field>
                                                                                   </block>
                                                                                 </value>
+                                                                                <value name="BOTHMOVRIGHT">
+                                                                                  <block type="sensor_object" id="188">
+                                                                                    <field name="OBJECT">LEFTFRONT</field>
+                                                                                  </block>
+                                                                                </value>
+                                                                                <next>
+                                                                                  <block type="movement_leftmotor" id="165" inline="true">
+                                                                                    <value name="MOVLEFT">
+                                                                                      <block type="sensor_object" id="93">
+                                                                                        <field name="OBJECT">LEFTFRONT</field>
+                                                                                      </block>
+                                                                                    </value>
+                                                                                    <next>
+                                                                                      <block type="robot_delay" id="190" inline="true">
+                                                                                        <value name="DELAY">
+                                                                                          <block type="math_number" id="203">
+                                                                                            <field name="NUM">2500</field>
+                                                                                          </block>
+                                                                                        </value>
+                                                                                      </block>
+                                                                                    </next>
+                                                                                  </block>
+                                                                                </next>
                                                                               </block>
                                                                             </next>
                                                                           </block>
