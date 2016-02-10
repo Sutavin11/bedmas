@@ -39,5 +39,4 @@
       </block>
     </statement>
   </block>
-  <block type="oled_cleardisplay" id="8" x="-579" y="103"></block>
 </xml>
